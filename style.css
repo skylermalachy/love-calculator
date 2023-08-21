@@ -129,3 +129,11 @@ body {
   margin: 80px;
   font-size: 0.8rem;
 }
+.redo {
+  background-color: green;
+  font-weight: 400;
+  font-size: large;
+  border-radius: 7px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
