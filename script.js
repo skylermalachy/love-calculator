@@ -1,6 +1,7 @@
 "use strict";
 const displayResult = document.querySelector(".display");
 const displayComment = document.querySelector(".comment");
+const partnerName = document.querySelector(".input-pname").value;
 
 const checkBtn = document.querySelector(".check");
 const redoBtn = document.querySelector(".redo");
@@ -12,8 +13,7 @@ checkBtn.addEventListener("click", function () {
   setTimeout(function () {
     checkBtn.style.backgroundColor = "red";
   }, 1000);
-  document.querySelector(".input-pname").value = " ";
-  document.querySelector(".input-myname").value = " ";
+
   if (
     myName === "" ||
     (partnerName === "" && myName === "enter your name") ||
@@ -37,6 +37,8 @@ checkBtn.addEventListener("click", function () {
       displayComment.textContent = `${partnerName} has an undiluted love for you ${myName} ➡♥♥♥💑`;
     }
   }
+  document.querySelector(".input-pname").value = "enter partner's name";
+  document.querySelector(".input-myname").value = "enter your name";
 });
 redoBtn.addEventListener("click", function () {
   redoBtn.style.backgroundColor = "black";
