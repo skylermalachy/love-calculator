@@ -7,7 +7,10 @@ const checkBtn = document.querySelector(".check");
 checkBtn.addEventListener("click", function () {
   const myName = document.querySelector(".input-myname").value;
   const partnerName = document.querySelector(".input-pname").value;
-
+  checkBtn.style.backgroundColor = "white";
+  setTimeout(function () {
+    checkBtn.style.backgroundColor = "red";
+  }, 1000);
   const randomNumber = Math.trunc(Math.random() * 99 + 1);
   displayResult.textContent = `${partnerName} has ${randomNumber}% love for you ${myName}`;
   if (randomNumber < 30) {
