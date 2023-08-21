@@ -3,12 +3,12 @@ const displayResult = document.querySelector(".display");
 const displayComment = document.querySelector(".comment");
 
 const checkBtn = document.querySelector(".check");
-const myName = document.querySelector(".input-myname").value;
-const partnerName = document.querySelector(".input-pname").value;
-
-const randomNumber = Math.trunc(Math.random() * 99 + 1);
 
 checkBtn.addEventListener("click", function () {
+  const myName = document.querySelector(".input-myname").value;
+  const partnerName = document.querySelector(".input-pname").value;
+
+  const randomNumber = Math.trunc(Math.random() * 99 + 1);
   displayResult.textContent = `${partnerName} has ${randomNumber}% love for you ${myName}`;
   if (randomNumber < 30) {
     displayComment.textContent = `${partnerName} just dey whine you ${myName}`;
