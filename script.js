@@ -28,6 +28,6 @@ checkBtn.addEventListener("click", function () {
   if (randomNumber > 75) {
     displayComment.textContent = `${partnerName} has an undiluted love for you ${myName} ➡♥♥♥💑`;
   }
-  myName = "";
-  partnerName = "";
+  document.querySelector(".input-pname").value = " ";
+  document.querySelector(".input-myname").value = " ";
 });
