@@ -15,17 +15,13 @@ checkBtn.addEventListener("click", function () {
   displayResult.textContent = `${partnerName} has ${randomNumber}% love for you ${myName}`;
   if (randomNumber < 30) {
     displayComment.textContent = `${partnerName} just dey whine you ${myName}`;
-  }
-  if (randomNumber < 30) {
+  } else if (randomNumber < 30) {
     displayComment.textContent = `${partnerName} just dey whine you ${myName}`;
-  }
-  if (randomNumber > 30 && randomNumber <= 50) {
+  } else if (randomNumber > 30 && randomNumber <= 50) {
     displayComment.textContent = `${partnerName} is not in love with you ${myName}`;
-  }
-  if (randomNumber > 50 && randomNumber <= 75) {
+  } else if (randomNumber > 50 && randomNumber <= 75) {
     displayComment.textContent = `${partnerName} loves you but needs more commitment from you ${myName}💗`;
-  }
-  if (randomNumber > 75) {
+  } else if (randomNumber > 75) {
     displayComment.textContent = `${partnerName} has an undiluted love for you ${myName} ➡♥♥♥💑`;
   }
   document.querySelector(".input-pname").value = " ";
